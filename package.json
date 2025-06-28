@@ -5,7 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/app.js",
+    "start": "npm run build && node dist/app.js",
     "dev": "concurrently \"tsc -w\" \"nodemon dist/app.js\"",
     "clean": "rimraf dist"
   },
@@ -28,4 +28,4 @@
     "concurrently": "^8.2.2",
     "rimraf": "^5.0.5"
   }
-} 
+}
