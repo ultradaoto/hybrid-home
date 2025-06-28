@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main class="main-content">
+        <section class="about-hero">
+            <div class="about-container">
+                <h1><%= message %></h1>
+                <p class="about-intro">Empowering individuals to reach their full potential through personalized coaching and support.</p>
+            </div>
+        </section>
+        
+        <section class="about-content">
+            <div class="about-container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>At MyUltra.Coach, we believe everyone has the potential to achieve extraordinary things. Our mission is to provide world-class coaching services that help individuals unlock their capabilities and reach their goals.</p>
+                        
+                        <h2>What We Offer</h2>
+                        <ul>
+                            <li>One-on-one coaching sessions</li>
+                            <li>Group coaching programs</li>
+                            <li>Goal setting and accountability</li>
+                            <li>Personal development resources</li>
+                            <li>Progress tracking and analytics</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-rocket"></i>
+                            <p>Your Journey Starts Here</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <h2>Ready to Start Your Journey?</h2>
+                    <p>Join thousands of individuals who have transformed their lives with MyUltra.Coach</p>
+                    <a href="https://rooms.myultra.coach" class="btn btn-primary" target="_blank">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html> 

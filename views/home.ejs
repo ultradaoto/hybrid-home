@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-container">
+                <h1 class="hero-title"><%= message %></h1>
+                <p class="hero-subtitle">Your ultimate coaching platform for achieving extraordinary results</p>
+                <div class="hero-buttons">
+                    <a href="/about" class="btn btn-primary">Learn More</a>
+                    <a href="https://rooms.myultra.coach" class="btn btn-secondary" target="_blank">Get Started</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="features-container">
+                <h2>Why Choose MyUltra.Coach?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Expert Coaching</h3>
+                        <p>Professional coaches with proven track records</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your growth with advanced analytics</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Support</h3>
+                        <p>Connect with like-minded individuals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html> 
